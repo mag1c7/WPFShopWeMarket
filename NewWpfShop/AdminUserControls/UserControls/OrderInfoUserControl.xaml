@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="NewWpfShop.AdminUserControls.UserControls.OrderInfoUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NewWpfShop.AdminUserControls.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="140" d:DesignWidth="500" Height="140"  Background="White">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.01*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.01*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.02*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.02*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="0.02*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.02*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Border BorderBrush="Black" BorderThickness="0.5">
+                    <Image x:Name="image" Source="/Assets/DefaultImage.png" Height="140" Width="140" Stretch="UniformToFill"/>
+                </Border>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="0.4*"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="labelName" Grid.Row="0" Content="Название:" VerticalAlignment="Center" FontSize="14" FontStyle="Italic"/>
+                <Label x:Name="labelPrice" Grid.Row="1" Content="Цена:" FontSize="14" FontStyle="Italic" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="4">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Visibility="Collapsed" x:Name="labelIssued" Content="Выдан покупателю?" FontSize="12" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="0.4*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Label Grid.Column="0" Content="Кол-во:" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" x:Name="labelCoast" Content="0 шт" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

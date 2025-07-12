@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>mylogo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\BinImage.png" />
+    <None Remove="Assets\DefaultImage.png" />
+    <None Remove="Assets\DefaultUser.png" />
+    <None Remove="Assets\EditImage.png" />
+    <None Remove="Assets\FavoriteProduct.png" />
+    <None Remove="Assets\pc-icon.png" />
+    <None Remove="Assets\PenImage.jpg" />
+    <None Remove="Assets\RedFavoriteProduct.png" />
+    <None Remove="Assets\SelectedProduct.png" />
+    <None Remove="Assets\Star.png" />
+    <None Remove="Assets\UserIcon.png" />
+    <None Remove="Assets\WeMarket.ico" />
+    <None Remove="Assets\WeMarket.png" />
+    <None Remove="Assets\WeMarket.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="mylogo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.3.0" />
+    <PackageReference Include="DocX" Version="4.0.25105.5786" />
+    <PackageReference Include="itextsharp" Version="5.5.13.3" />
+    <PackageReference Include="MaterialDesignColors" Version="5.2.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
+    <PackageReference Include="MaterialDesignThemes.Wpf" Version="1.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="PdfPig" Version="0.1.10" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
+    <PackageReference Include="QRCoder" Version="1.6.0" />
+    <PackageReference Include="Spire.Doc" Version="13.4.4" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\BinImage.png" />
+    <Resource Include="Assets\DefaultImage.png" />
+    <Resource Include="Assets\DefaultUser.png" />
+    <Resource Include="Assets\EditImage.png" />
+    <Resource Include="Assets\FavoriteProduct.png" />
+    <Resource Include="Assets\PenImage.jpg" />
+    <Resource Include="Assets\SelectedProduct.png" />
+    <Resource Include="Assets\Star.png" />
+    <Resource Include="Assets\UserIcon.png" />
+    <Resource Include="Assets\WeMarket.ico" />
+    <Resource Include="Assets\WeMarket.png" />
+    <Resource Include="Assets\WeMarket.svg" />
+  </ItemGroup>
+
+</Project>
